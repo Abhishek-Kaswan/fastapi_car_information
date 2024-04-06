@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from typing import Optional, List, Dict
 from starlette.responses import HTMLResponse
 from starlette.status import HTTP_400_BAD_REQUEST
-from database import cars
+from .database import cars
 
 templates = Jinja2Templates(directory="templates")
 
