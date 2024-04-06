@@ -22,7 +22,7 @@ class Car(BaseModel):
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("./static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=RedirectResponse)
 def root(request: Request):
